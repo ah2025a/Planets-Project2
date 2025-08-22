@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - كواكب مجموعتنا الشمسية</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-globe-americas"></i> كواكب المجموعة الشمسية
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+                <style>
+                    @media (max-width: 768px) {
+                        .navbar-nav .nav-link {
+                            padding: 10px 0;
+                            font-size: 1rem;
+                        }
+                        .navbar-nav .nav-item {
+                            border-bottom: 1px solid rgba(255,255,255,0.1);
+                            width: 100%;
+                        }
+                    }
+                </style>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">تواصل معنا</h1>
+            <p data-aos="fade-up" data-aos-delay="200">نرحب بأسئلتكم واقتراحاتكم</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="mb-4">ارسل لنا رسالة</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">الاسم الكامل <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">رقم الهاتف <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">الموضوع</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">الرسالة <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane ms-2"></i> إرسال الرسالة
+                        </button>
+                    </form>
+                    <div class="alert alert-success mt-3 d-none" id="successMessage">
+                        <i class="fas fa-check-circle me-2"></i> تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="mb-4">معلومات الاتصال</h2>
+                    <div class="contact-info">
+                        <div class="info-item mb-4">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="content">
+                                <h4>العنوان</h4>
+                                <p>صنعاء، اليمن<br>كلية المجتمع - بلاد الروس - سنحان،  
+
+</p>
+                            </div>
+                        </div>
+                        <div class="info-item mb-4">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="content">
+                                <h4>الهاتف</h4>
+                                <p>+967 777777777</p>
+                            </div>
+                        </div>
+                        <div class="info-item mb-4">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <h4>البريد الإلكتروني</h4>
+                                <p>info@planets-solar-system.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item mb-4">
+                            <div class="icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="content">
+                                <h4>ساعات العمل</h4>
+                                <p>الأحد - الخميس: 9:00 صباحاً - 5:00 مساءً<br>الجمعة - السبت: مغلق</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media mt-4">
+                        <h4>تابعنا على وسائل التواصل الاجتماعي</h4>
+                        <div class="social-icons">
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">موقعنا على الخريطة</h2>
+            <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492558.34978237265!2d44.8406982421875!3d15.316141498820866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603b7004c19bf01%3A0x184b77dc58c67aff!2z2YPZhNmK2Kkg2KfZhNmF2KzYqtmF2Lkg2LPZhtit2KfZhiDZiNio2YTYp9ivINin2YTYsdmI2LM!5e0!3m2!1sar!2s!4v1755733980684!5m2!1sar!2s" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">الأسئلة الشائعة</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    ما هي مصادر معلوماتكم عن الكواكب؟
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    نعتمد على مصادر علمية موثوقة مثل وكالة ناسا، والوكالة الأوروبية للفضاء،以及 الدراسات العلمية المنشورة في مجلات متخصصة. جميع المعلومات التي نقدمها يتم مراجعتها من قبل فريق من الخبراء في مجال الفلك.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    هل يمكنني استخدام الصور من موقعكم؟
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    معظم الصور في موقعنا هي صور حرة للاستخدام غير التجاري بشرط ذكر المصدر. إذا كنت تنوي استخدامها لأغراض تجارية، يرجى التواصل معنا للحصول على الإذن اللازم.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    كيف يمكنني الانضمام إلى فريقكم؟
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    نرحب دائماً بالانضمام إلى فريقنا! يمكنك إرسال سيرتك الذاتية مع رسالة توضيحية عن مهاراتك واهتماماتك إلى البريد الإلكتروني jobs@planets-solar-system.com. سنقوم بالتواصل معك في حال وجود فرص مناسبة.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="accordion" id="faqAccordion2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    هل تقدمون ورش عمل أو محاضرات؟
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    نعم، ننظم بانتظام ورش عمل ومحاضرات عن الكواكب وعلوم الفضاء للمدارس والجامعات والمؤسسات التعليمية. يمكنك متابعة صفحتنا على وسائل التواصل الاجتماعي لمعرفة مواعيد الفعاليات القادمة أو التواصل معنا لتنظيم فعالية خاصة.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                    كيف يمكنني دعم مشروعكم؟
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    هناك عدة طرق لدعمنا: يمكنك التبرع لمشروعنا، أو المشاركة في نشر محتوانى، أو التطوع معنا، أو حتى مجرد مشاركة موقعك مع الأصدقاء والعائلة. كل أشكال الدعم تساعدنا في تحقيق رسالتنا.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                                    هل لديكم تطبيق جوال؟
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    نعم، لدينا تطبيق جوال متاح لأنظمة أندرويد وآيفون. التطبيق يوفر تجربة تفاعلية مميزة لاستكشاف الكواكب ومعلومات مفصلة عنها. يمكنك تحميل التطبيق من متاجر التطبيقات الرئيسية.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>كواكب المجموعة الشمسية</h5>
+                    <p>موقع تعليمي يقدم معلومات شاملة عن كواكب مجموعتنا الشمسية بطريقة عصرية وجذابة.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-white">من نحن</a></li>
+                        <li><a href="contact.html" class="text-white">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>تابعنا</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 كواكب المجموعة الشمسية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

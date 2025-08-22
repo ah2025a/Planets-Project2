@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كواكب مجموعتنا الشمسية</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: rgba(44, 62, 80, 0.95) !important;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-globe-americas"></i> كواكب المجموعة الشمسية
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+                <style>
+                    @media (max-width: 768px) {
+                        .navbar-nav .nav-link {
+                            padding: 10px 0;
+                            font-size: 1rem;
+                        }
+                        .navbar-nav .nav-item {
+                            border-bottom: 1px solid rgba(255,255,255,0.1);
+                            width: 100%;
+                        }
+                    }
+                </style>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 data-aos="fade-up" data-aos-duration="1000">رحلة إلى الكواكب</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">اكتشف عجائب المجموعة الشمسية في رحلة فضائية ممتعة</p>
+            <a href="#planets" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                استكشف الآن <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Planets Section -->
+    <section id="planets" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">كواكب مجموعتنا الشمسية</h2>
+            <div class="row g-4">
+                <!-- Planet Card 1 - Mercury -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card planet-card h-100">
+                        <img src="images/عطارد.jpg" class="card-img-top" alt="عطارد">
+                        <div class="card-body">
+                            <h5 class="card-title">عطارد</h5>
+                            <p class="card-text">الجوهرة السريعة التي ترقص حول الشمس، عالم من التضاريس المتناقضة حيث تقابل حرارة الظهارة اللاهبة برودة ليالي القطب القارسة. كوكب يكشف أسراره ببطء لبعثاتنا الفضائية.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mercuryModal">
+                                رحلة إلى عطارد
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Planet Card 2 - Venus -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card planet-card h-100">
+                        <img src="images/الزهرة.jpg" class="card-img-top" alt="الزهرة">
+                        <div class="card-body">
+                            <h5 class="card-title">الزهرة</h5>
+                            <p class="card-text">التوأم الشقي للأرض، عالم من الضباب الكثيف والحرارة الخانقة. كوكب يخفي تحت غلافه الجوي السميك أسرارًا عن الماضي والمستقبل، حيث تتحول الغيوم إلى أمطار حمضية لا تنقطع.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#venusModal">
+                                اكتشف الزهرة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Planet Card 3 - Earth -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card planet-card h-100">
+                        <img src="images/الأرض.jpg" class="card-img-top" alt="الأرض">
+                        <div class="card-body">
+                            <h5 class="card-title">الأرض</h5>
+                            <p class="card-text">الجوهرة الزرقاء المتلألئة في الفضاء، موطن الحياة الوحيد المعروف في الكون. كوكب من المحيطات الواسعة والقارات الخضراء، حيث تتعانق السحب مع الجبال والأنهار في لوحة فنية إلهية.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#earthModal">
+                                كوكبنا الحبيب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Planet Card 4 - Mars -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card planet-card h-100">
+                        <img src="images/المريخ.jpg" class="card-img-top" alt="المريخ">
+                        <div class="card-body">
+                            <h5 class="card-title">المريخ</h5>
+                            <p class="card-text">الكوكب الأحمر الوميض في سماء الليل، عالم من الغبار الأحمر والوديان العميقة. يحمل في طياته أسرار الماضي المائي وآمال المستقبل البشري، حيث قد تكون الحياة قد اختبأت يومًا ما تحت سطحه.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#marsModal">
+                                إلى الكوكب الأحمر
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Planet Card 5 - Jupiter -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card planet-card h-100">
+                        <img src="images/المشتري.jpg" class="card-img-top" alt="المشتري">
+                        <div class="card-body">
+                            <h5 class="card-title">المشتري</h5>
+                            <p class="card-text">العملاق المهيب الذي يحرس المجموعة الشمسية، عالم من العواصف الأبدية والألوان الزاهية. يحمل في قلبه سر البقعة الحمراء العظيمة، عاصفة ضخمة تستمر منذ مئات السنين.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jupiterModal">
+                                عالم المشتري
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Planet Card 6 - Saturn -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card planet-card h-100">
+                        <img src="images/زحل.jpg" class="card-img-top" alt="زحل">
+                        <div class="card-body">
+                            <h5 class="card-title">زحل</h5>
+                            <p class="card-text">الفنان الساحر للسماء، كوكب يحيط به هالة من الجليد والغبار تتلألأ كألماس في الفضاء. حلقاته المعقدة تحكي قصة عن الاصطدامات والجاذبية في رقصة كونية رائعة.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#saturnModal">
+                                سحر زحل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Planet Card 7 - Uranus -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card planet-card h-100">
+                        <img src="images/أورانوس.jpg" class="card-img-top" alt="أورانوس">
+                        <div class="card-body">
+                            <h5 class="card-title">أورانوس</h5>
+                            <p class="card-text">الكوكب المتمرد الذي يحتفي بتميزه، يدور حول محوره بشكل جانبي كأنه يتحدى قوانين الطبيعة. عالم من اللون الأزرق الفاتح الذي يخفي في أعماقه أسرارًا عن تكوين الكواكب الغازية.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uranusModal">
+                                أورانوس الغامض
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Planet Card 8 - Neptune -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card planet-card h-100">
+                        <img src="images/نبتون.jpg" class="card-img-top" alt="نبتون">
+                        <div class="card-body">
+                            <h5 class="card-title">نبتون</h5>
+                            <p class="card-text">الحارس البعيد للمجموعة الشمسية، عالم من الرياح العاتية التي تفوق سرعتها سرعة الصوت. كوكب أزرق عميق يحمل في قلبه سر العواصف الهائلة والبقع المظلمة التي تظهر وتختفي بغموض.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#neptuneModal">
+                                عوالم نبتون
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">لماذا تختار موقعنا؟</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-rocket feature-icon"></i>
+                        <h4>معلومات دقيقة</h4>
+                        <p>نقدم لك معلومات موثوقة عن الكواكب مصدرة من مصادر علمية معتمدة.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-images feature-icon"></i>
+                        <h4>صور حقيقية</h4>
+                        <p>صور عالية الجودة للكواكب التقطتها وكالات الفضاء العالمية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-vr-cardboard feature-icon"></i>
+                        <h4>تجربة تفاعلية</h4>
+                        <p>استكشف الكواكب بطريقة ثلاثية الأبعاد وتفاعلية تجعلك تشعر بأنك في الفضاء.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>كواكب المجموعة الشمسية</h5>
+                    <p>موقع تعليمي يقدم معلومات شاملة عن كواكب مجموعتنا الشمسية بطريقة عصرية وجذابة.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-white">من نحن</a></li>
+                        <li><a href="contact.html" class="text-white">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>تابعنا</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2025 كواكب المجموعة الشمسية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals for Planets -->
+    <!-- Mercury Modal -->
+    <div class="modal fade" id="mercuryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">عطارد</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/عطارد.jpg" class="img-fluid mb-3" alt="عطارد">
+                    <p><strong>القطر:</strong> 4,879 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 57.9 مليون كم</p>
+                    <p><strong>عدد الأقمار:</strong> 0</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 88 يوم أرضي</p>
+                    <p><strong>معلومات إضافية:</strong> عطارد هو أصغر كواكب المجموعة الشمسية وأقربها إلى الشمس. لا يملك غلافًا جويًا ذا أهمية، وتتفاوت درجات حرارته بشكل كبير بين النهار والليل.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Venus Modal -->
+    <div class="modal fade" id="venusModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">الزهرة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/الزهرة.jpg" class="img-fluid mb-3" alt="الزهرة">
+                    <p><strong>القطر:</strong> 12,104 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 108.2 مليون كم</p>
+                    <p><strong>عدد الأقمار:</strong> 0</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 225 يوم أرضي</p>
+                    <p><strong>معلومات إضافية:</strong> الزهرة هو ثاني كوكب من حيث القرب من الشمس، ويشبه الأرض في الحجم والكتلة. يعتبر من أشد الكواكب سخونة بسبب تأثير الاحتباس الحراري الشديد في غلافه الجوي.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Earth Modal -->
+    <div class="modal fade" id="earthModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">الأرض</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/الأرض.jpg" class="img-fluid mb-3" alt="الأرض">
+                    <p><strong>القطر:</strong> 12,742 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 149.6 مليون كم</p>
+                    <p><strong>عدد الأقمار:</strong> 1 (القمر)</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 365.25 يوم</p>
+                    <p><strong>معلومات إضافية:</strong> الأرض هو الكوكب الثالث من الشمس والوحيد المعروف بوجود الحياة عليه. يتميز بوجود الماء السائل والغلاف الجوي المناسب لدعم الحياة.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mars Modal -->
+    <div class="modal fade" id="marsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">المريخ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/المريخ.jpg" class="img-fluid mb-3" alt="المريخ">
+                    <p><strong>القطر:</strong> 6,779 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 227.9 مليون كم</p>
+                    <p><strong>عدد الأقمار:</strong> 2 (فوبوس وديموس)</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 687 يوم أرضي</p>
+                    <p><strong>معلومات إضافية:</strong> المريخ هو الكوكب الرابع من الشمس، ويُعرف بالكوكب الأحمر بسبب لون سطحه. يعتبر من أكثر الكواكب تشابهًا مع الأرض، وقد يكون قد استضاف حياة في الماضي.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jupiter Modal -->
+    <div class="modal fade" id="jupiterModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">المشتري</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/المشتري.jpg" class="img-fluid mb-3" alt="المشتري">
+                    <p><strong>القطر:</strong> 139,820 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 778.5 مليون كم</p>
+                    <p><strong>عدد الأقمار:</strong> 79 قمرًا معروفًا</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 11.86 سنة أرضية</p>
+                    <p><strong>معلومات إضافية:</strong> المشتري هو أكبر كواكب المجموعة الشمسية، وكتلته أكبر من مجموع كتل جميع الكواكب الأخرى مجتمعة. يتميز بوجود البقعة الحمراء العظيمة، وهي عاصفة ضخمة تدور منذ مئات السنين.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Saturn Modal -->
+    <div class="modal fade" id="saturnModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">زحل</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/زحل.jpg" class="img-fluid mb-3" alt="زحل">
+                    <p><strong>القطر:</strong> 116,460 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 1.432 مليار كم</p>
+                    <p><strong>عدد الأقمار:</strong> 82 قمرًا معروفًا</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 29.46 سنة أرضية</p>
+                    <p><strong>معلومات إضافية:</strong> زحل هو ثاني أكبر كواكب المجموعة الشمسية، ويشتهر بحلقاته المذهلة التي تتكون من جليد وصخور. كثافته منخفضة لدرجة أنه يمكن أن يطفو على الماء.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Uranus Modal -->
+    <div class="modal fade" id="uranusModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">أورانوس</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/أورانوس.jpg" class="img-fluid mb-3" alt="أورانوس">
+                    <p><strong>القطر:</strong> 50,724 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 2.867 مليار كم</p>
+                    <p><strong>عدد الأقمار:</strong> 27 قمرًا معروفًا</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 84.01 سنة أرضية</p>
+                    <p><strong>معلومات إضافية:</strong> أورانوس هو كوكب جليدي عملاق، ويتميز بكونه يميل على جانبه بشكل فريد، مما يجعله يدور حول الشمس بشكل أفقي تقريبًا. لونه أزرق مخضر بسبب وجود الميثان في غلافه الجوي.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neptune Modal -->
+    <div class="modal fade" id="neptuneModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">نبتون</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/نبتون.jpg" class="img-fluid mb-3" alt="نبتون">
+                    <p><strong>القطر:</strong> 49,244 كم</p>
+                    <p><strong>المسافة عن الشمس:</strong> 4.515 مليار كم</p>
+                    <p><strong>عدد الأقمار:</strong> 14 قمرًا معروفًا</p>
+                    <p><strong>فترة الدوران حول الشمس:</strong> 164.8 سنة أرضية</p>
+                    <p><strong>معلومات إضافية:</strong> نبتون هو أبعد كواكب المجموعة الشمسية عن الشمس، وهو كوكب جليدي عملاق يتميز بلونه الأزرق الداكن. لديه أسرع رياح في المجموعة الشمسية، حيث تتجاوز سرعتها 2000 كم/ساعة.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
